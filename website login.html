@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		form {
+			width: 400px;
+			margin: 0 auto;
+			background-color: #ffffff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #ccc;
+		}
+
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		button[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+
+		img.avatar {
+			width: 100px;
+			border-radius: 50%;
+		}
+
+		.container {
+			padding: 16px;
+		}
+
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Login Form</h1>
+	<form action="" method="POST">
+		<div class="imgcontainer">
+			<img src="avatar.png" alt="Avatar" class="avatar">
+		</div>
+
+		<div class="container">
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit">Login</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+	</form>
+</body>
+</html>
